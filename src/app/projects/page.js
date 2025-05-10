@@ -6,7 +6,7 @@ export default function Project() {
       <h1 className="">Projects</h1>
       
       <ProjectItem 
-        image="@public/assets/"
+        image="/assets/"
         title="Project 1" 
         github=""
         summary={[
@@ -22,7 +22,7 @@ export default function Project() {
       />
 
       <ProjectItem 
-        image="@public/assets/"
+        image="/assets/"
         title="Project 2" 
         summary={[
           "",
@@ -32,7 +32,7 @@ export default function Project() {
       />
 
       <ProjectItem 
-        image="@public/assets/"
+        image="/assets/"
         title="Project 3" 
         summary={[
           "",
@@ -42,7 +42,7 @@ export default function Project() {
       />
 
       <ProjectItem 
-        image="@public/assets/"
+        image="/assets/"
         title="Project 4" 
         summary={[
           "",

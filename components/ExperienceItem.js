@@ -4,7 +4,7 @@ export default function ExperienceItem({ image, company, title, date, location, 
       {image && (
         <img
           src={image}
-          className="w-10 h-10 object-contain mb-2"
+          className="w-10 h-10 object-contain mb-2 rounded-full"
         />
       )}
 

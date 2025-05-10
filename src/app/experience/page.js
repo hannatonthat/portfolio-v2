@@ -5,7 +5,7 @@ export default function Experience() {
     <main className="">
       <h1 className="">Experience</h1>
       <ExperienceItem 
-        image="@public/assets/"
+        image="/assets/pco.png"
         company="Privy Council Office" 
         title="Backend Developer & Data Engineer"
         date="May 2025 - Aug 2025"
@@ -17,7 +17,7 @@ export default function Experience() {
         ]}
       />
       <ExperienceItem 
-        image="@public/assets/"
+        image="/assets/chusj.png"
         company="CHU Sainte-Justine" 
         title="Machine Learning Developer" 
         date="May 2024 - Aug 2024"
@@ -29,7 +29,7 @@ export default function Experience() {
         ]}
       />
       <ExperienceItem 
-        image="@public/assets/"
+        image="/assets/warg.png"
         company="Waterloo Aerial Robotics Group" 
         title="Software Developer" 
         date="Sep 2024 - Present"
@@ -41,7 +41,7 @@ export default function Experience() {
         ]}
       />
       <ExperienceItem 
-        image="@public/assets/"
+        image="/assets/uwrl.jpg"
         company="Waterloo Reality Labs" 
         title="Software Developer" 
         date="Jan 2025 - Present"
