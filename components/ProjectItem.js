@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
@@ -5,8 +7,9 @@ export default function ProjectItem({ image, title, github, summary = [], skills
   return (
     <div className="">
       {image && (
-        <img
+        <Image
           src={image}
+          alt=""
           className="w-10 h-10 object-contain mb-2"
         />
       )}

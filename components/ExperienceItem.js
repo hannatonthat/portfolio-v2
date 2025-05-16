@@ -1,9 +1,12 @@
+import Image from "next/image";
+
 export default function ExperienceItem({ image, company, title, date, location, summary = [] }) {
   return (
     <div className="">
       {image && (
-        <img
+        <Image
           src={image}
+          alt=""
           className="w-10 h-10 object-contain mb-2 rounded-full"
         />
       )}

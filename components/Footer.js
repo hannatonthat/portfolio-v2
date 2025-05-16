@@ -17,42 +17,43 @@ export default function Footer() {
   };
 
   return (
-    <footer className="">
+    <footer className="flex justify-between items-center w-full">
       <p>2025 © Hanna Ton That</p>
+      <div className="flex gap-2">
+        <a 
+          href="https://github.com/hannatonthat" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          className=""
+        >
+          <FontAwesomeIcon icon={faGithub} className="text-xl" />
+        </a>
 
-      <a 
-        href="https://github.com/hannatonthat" 
-        target="_blank" 
-        rel="noopener noreferrer" 
-        className=""
-      >
-        <FontAwesomeIcon icon={faGithub} className="text-black w-5 h-5" />
-      </a>
+        <a 
+          href="https://www.linkedin.com/in/hannatonthat/" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          className=""
+        >
+          <FontAwesomeIcon icon={faLinkedin} className="text-xl" />
+        </a>
 
-      <a 
-        href="https://www.linkedin.com/in/hannatonthat/" 
-        target="_blank" 
-        rel="noopener noreferrer" 
-        className=""
-      >
-        <FontAwesomeIcon icon={faLinkedin} className="text-black w-5 h-5" />
-      </a>
+        <button
+          onClick={copyEmail}
+          className=""
+        >
+          <FontAwesomeIcon icon={faEnvelope} className="text-xl cursor-pointer" />
+        </button>
 
-      <button
-        onClick={copyEmail}
-        className=""
-      >
-        <FontAwesomeIcon icon={faEnvelope} className="text-black w-5 h-5 cursor-pointer" />
-      </button>
-
-      <a 
-        href="@public/assets/resume.pdf" 
-        target="_blank" 
-        rel="noopener noreferrer" 
-        className=""
-      >
-        <FontAwesomeIcon icon={faFilePdf} className="text-black w-5 h-5" />
-      </a>
+        <a 
+          href="@public/assets/resume.pdf" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          className=""
+        >
+          <FontAwesomeIcon icon={faFilePdf} className="text-xl" />
+        </a>
+      </div>
     </footer>
   )
 }
