@@ -7,27 +7,43 @@ export default function Project() {
       
       <ProjectItem 
         image="/assets/"
-        title="Project 1" 
-        github=""
+        title="Match-A-Wish" 
+        github="https://github.com/hannatonthat/MatchAWish-McHacks2025"
+        devpost="https://devpost.com/software/match-a-wish"
+        summary={[
+          "Winner - Best AI Project with Databricks Open Source",
+          "",
+          ""
+        ]}
+        skills={[
+          "React",
+          "Node.js",
+          "OpenAI",
+          "Auth0",
+          "Databricks",
+          "JavaScript"
+        ]}
+      />
+
+      <ProjectItem 
+        image="/assets/"
+        title="RemberU"
+        github="https://github.com/hannatonthat/RemberU-HTN2024"
+        devpost="https://devpost.com/software/orientu"
         summary={[
           "",
           "",
           ""
         ]}
         skills={[
-          "Skill 1",
-          "Skill 2",
-          "Skill 3"
-        ]}
-      />
-
-      <ProjectItem 
-        image="/assets/"
-        title="Project 2" 
-        summary={[
-          "",
-          "",
-          ""
+          "Flutter",
+          "Dart",
+          "Firebase",
+          "Flask",
+          "OpenCV",
+          "YOLOv8",
+          "PyTorch",
+          "Python"
         ]}
       />
 

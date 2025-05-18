@@ -11,7 +11,7 @@ export default function Navbar() {
   const { darkMode, setDarkMode } = useContext(ThemeContext);
 
   return (
-    <nav className="mt-16">
+    <nav className="mt-16 mb-8">
       <ul className="flex justify-between items-center w-full">
         <li><Link href="/">Hanna Ton That</Link></li>
         <div className="flex gap-4">

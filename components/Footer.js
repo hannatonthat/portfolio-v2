@@ -17,7 +17,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="flex justify-between items-center w-full">
+    <footer className="flex justify-between items-center w-full mt-8 mb-16">
       <p>2025 © Hanna Ton That</p>
       <div className="flex gap-2">
         <a 

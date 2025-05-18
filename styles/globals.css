@@ -13,3 +13,19 @@ body {
   color: var(--foreground);
   @apply transition-colors duration-300;
 }
+
+h1 {
+  @apply text-2xl font-bold
+}
+
+h2 {
+  @apply text-xl font-bold
+}
+
+h3 {
+  @apply text-lg font-bold
+}
+
+p {
+  @apply text-base
+}

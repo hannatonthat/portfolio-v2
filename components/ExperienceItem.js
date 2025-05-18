@@ -7,7 +7,9 @@ export default function ExperienceItem({ image, company, title, date, location, 
         <Image
           src={image}
           alt=""
-          className="w-10 h-10 object-contain mb-2 rounded-full"
+          width="40"
+          height="40"
+          className="object-contain mb-2 rounded-full"
         />
       )}
 

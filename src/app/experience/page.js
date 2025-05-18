@@ -5,6 +5,30 @@ export default function Experience() {
     <main className="">
       <h1 className="">Experience</h1>
       <ExperienceItem 
+        image="/assets/warg.png"
+        company="Waterloo Aerial Robotics Group" 
+        title="Software Developer" 
+        date="Sep 2024 - Present"
+        location="Waterloo, ON"
+        summary={[
+          "",
+          "",
+          ""
+        ]}
+      />
+      <ExperienceItem 
+        image="/assets/uwrl.jpg"
+        company="Waterloo Reality Labs" 
+        title="Software Developer" 
+        date="Jan 2025 - Present"
+        location="Waterloo, ON"
+        summary={[
+          "",
+          "",
+          ""
+        ]}
+      />
+      <ExperienceItem 
         image="/assets/pco.png"
         company="Privy Council Office" 
         title="Backend Developer & Data Engineer"
@@ -29,23 +53,11 @@ export default function Experience() {
         ]}
       />
       <ExperienceItem 
-        image="/assets/warg.png"
-        company="Waterloo Aerial Robotics Group" 
-        title="Software Developer" 
-        date="Sep 2024 - Present"
-        location="Waterloo, ON"
-        summary={[
-          "",
-          "",
-          ""
-        ]}
-      />
-      <ExperienceItem 
-        image="/assets/uwrl.jpg"
-        company="Waterloo Reality Labs" 
-        title="Software Developer" 
-        date="Jan 2025 - Present"
-        location="Waterloo, ON"
+        image="/assets/dawson.png"
+        company="Dawson College" 
+        title="Robotics Researcher" 
+        date="Jan 2024 - May 2024"
+        location="Montreal, QC"
         summary={[
           "",
           "",
