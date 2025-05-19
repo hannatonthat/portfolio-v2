@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -6,7 +8,7 @@ import { faLaptopCode } from '@fortawesome/free-solid-svg-icons'
 
 export default function ProjectItem({ image, title, github, devpost, summary = [], skills = [] }) {
   return (
-    <div className="">
+    <div className="mt-8 mb-8">
       {image && (
         <Image
           src={image}
@@ -19,28 +21,23 @@ export default function ProjectItem({ image, title, github, devpost, summary = [
 
       <div className="flex gap-2">
         <h3 className="">{title}</h3>
-
-        {github && (
-          <a 
-            href={github} 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            className="inline-block mt-1"
-          >
-            <FontAwesomeIcon icon={faGithub} className="text-black text-xl" />
-          </a>
-        )}
-
-        {github && (
-          <a 
-            href={devpost} 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            className="inline-block mt-1"
-          >
-            <FontAwesomeIcon icon={faLaptopCode} className="text-black text-xl" />
-          </a>
-        )}
+        <a 
+          href={github} 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          className="inline-block mt-5 mb-4"
+        >
+          <FontAwesomeIcon icon={faGithub} className="text-xl" />
+        </a>
+        <a 
+          href={devpost} 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          className="inline-block mt-5 mb-4"
+        >
+          <FontAwesomeIcon icon={faLaptopCode} className="text-xl" />
+        </a>
+        
       </div>
 
       {summary.length > 0 && (
@@ -56,7 +53,7 @@ export default function ProjectItem({ image, title, github, devpost, summary = [
           {skills.map((skill, idx) => (
             <span
               key={idx}
-              className="text-black bg-gray-200 text-sm px-2 py-1 rounded-md"
+              className="text-black bg-gray-300 text-sm px-2 py-1 rounded-md"
             >
               {skill}
             </span>

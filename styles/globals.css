@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 html {
   @apply bg-white text-black;
 }
@@ -15,17 +17,17 @@ body {
 }
 
 h1 {
-  @apply text-2xl font-bold
+  @apply text-2xl font-bold mt-4 mb-4
 }
 
 h2 {
-  @apply text-xl font-bold
+  @apply text-xl font-bold mt-4 mb-4
 }
 
 h3 {
-  @apply text-lg font-bold
+  @apply text-lg font-bold mt-4 mb-4
 }
 
 p {
-  @apply text-base
+  @apply text-base mt-2 mb-2
 }
