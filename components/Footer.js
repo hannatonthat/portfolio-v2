@@ -7,7 +7,7 @@ import { faFilePdf } from "@fortawesome/free-solid-svg-icons";
 
 export default function Footer() {
   const copyEmail = () => {
-    navigator.clipboard.writeText("hannatonthat@gmail.com")
+    navigator.clipboard.writeText("htonthat@uwaterloo.ca")
       .then(() => {
         alert("Email copied!");
       })
@@ -26,7 +26,7 @@ export default function Footer() {
           rel="noopener noreferrer" 
           className=""
         >
-          <FontAwesomeIcon icon={faGithub} className="text-xl" />
+          <FontAwesomeIcon icon={faGithub} className="text-xl transition-transform duration-300 hover:scale-110" />
         </a>
 
         <a 
@@ -35,14 +35,14 @@ export default function Footer() {
           rel="noopener noreferrer" 
           className=""
         >
-          <FontAwesomeIcon icon={faLinkedin} className="text-xl" />
+          <FontAwesomeIcon icon={faLinkedin} className="text-xl transition-transform duration-300 hover:scale-110" />
         </a>
 
         <button
           onClick={copyEmail}
           className=""
         >
-          <FontAwesomeIcon icon={faEnvelope} className="text-xl cursor-pointer" />
+          <FontAwesomeIcon icon={faEnvelope} className="text-xl cursor-pointer transition-transform duration-300 hover:scale-110" />
         </button>
 
         <a 
@@ -51,7 +51,7 @@ export default function Footer() {
           rel="noopener noreferrer" 
           className=""
         >
-          <FontAwesomeIcon icon={faFilePdf} className="text-xl" />
+          <FontAwesomeIcon icon={faFilePdf} className="text-xl transition-transform duration-300 hover:scale-110" />
         </a>
       </div>
     </footer>
