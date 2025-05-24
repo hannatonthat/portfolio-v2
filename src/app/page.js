@@ -91,7 +91,7 @@ export default function Home() {
           alt=""
           width="500"
           height="500"
-          className="rounded-full bg-gray-300"
+          className="rounded-full bg-zinc-200 dark:bg-zinc-800"
         />
         </div>
       </div>

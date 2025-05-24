@@ -53,7 +53,7 @@ export default function ProjectItem({ image, title, github, devpost, summary = [
           {skills.map((skill, idx) => (
             <span
               key={idx}
-              className="text-black bg-gray-300 text-sm px-2 py-1 rounded-md"
+              className="bg-zinc-200 dark:bg-zinc-800 text-sm px-2 py-1 rounded-md"
             >
               {skill}
             </span>
