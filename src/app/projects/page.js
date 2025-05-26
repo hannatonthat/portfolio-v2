@@ -80,7 +80,7 @@ export default function Project() {
           />
         ))
       ) : (
-        <p className="text-gray-500">No matching projects found.</p>
+        <p className="text-zinc-500">No matching projects found.</p>
       )}
   
     </main>
