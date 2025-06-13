@@ -17,18 +17,6 @@ export default function Experience() {
         ]}
       />
       <ExperienceItem 
-        image="/assets/uwrl.jpg"
-        company="Waterloo Reality Labs" 
-        title="Software Developer" 
-        date="Jan 2025 - Present"
-        location="Waterloo, ON"
-        summary={[
-          "",
-          "",
-          ""
-        ]}
-      />
-      <ExperienceItem 
         image="/assets/pco.png"
         company="Privy Council Office" 
         title="Backend Developer & Data Engineer"
@@ -43,7 +31,7 @@ export default function Experience() {
       <ExperienceItem 
         image="/assets/chusj.png"
         company="CHU Sainte-Justine" 
-        title="Machine Learning Developer" 
+        title="Software Developer" 
         date="May 2024 - Aug 2024"
         location="Montreal, QC"
         summary={[
@@ -55,7 +43,7 @@ export default function Experience() {
       <ExperienceItem 
         image="/assets/dawson.png"
         company="Dawson College" 
-        title="Robotics Researcher" 
+        title="Software Developer" 
         date="Jan 2024 - May 2024"
         location="Montreal, QC"
         summary={[

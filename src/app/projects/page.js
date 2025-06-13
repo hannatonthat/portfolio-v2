@@ -11,6 +11,7 @@ const allProjects = [
     image: "/assets/",
     title: "Match-A-Wish",
     github: "https://github.com/hannatonthat/MatchAWish-McHacks2025",
+    devpost: "https://devpost.com/software/match-a-wish",
     summary: [
       "Winner - Best AI Project with Databricks Open Source",
       "",

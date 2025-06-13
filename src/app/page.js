@@ -76,7 +76,7 @@ export default function Home() {
       <ul className="list-disc list-inside">
         <li>Mechatronics Engineering @ University of Waterloo</li>
         <li>Backend Developer & Data Engineer @ Privy Council Office</li>
-        <li></li>
+        <li>Building a ML trading bot with predictive models, backtesting, and Docker deployment</li>
       </ul>
       <h1 className="">About</h1>
       <div className="flex gap-8">

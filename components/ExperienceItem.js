@@ -4,7 +4,7 @@ export default function ExperienceItem({ image, company, title, date, location, 
   return (
     <div className="flex">
       <div className="flex flex-col items-center mr-4">
-        <div className="w-12 h-12 rounded-full bg-zinc-200 dark:bg-zinc-800 flex items-center justify-center">
+        <div className="mt-1 w-12 h-12 rounded-full bg-zinc-200 dark:bg-zinc-800 flex items-center justify-center">
           <Image
             src={image}
             alt=""
