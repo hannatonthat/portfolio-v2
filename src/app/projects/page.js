@@ -11,33 +11,50 @@ const allProjects = [
     image: "/assets/",
     title: "Match-A-Wish",
     github: "https://github.com/hannatonthat/MatchAWish-McHacks2025",
-    devpost: "https://devpost.com/software/match-a-wish",
-    summary: [
-      "Winner - Best AI Project with Databricks Open Source",
-      "",
-      ""
-    ],
+    summary: "AI-powered matching platform to connect donor surplus to hospitals in need. Designed in 24 hours, winning best use of AI and Databricks at McHacks 2025.",
     skills: ["React", "Node.js", "OpenAI", "Auth0", "Databricks", "JavaScript"]
   },
   {
     image: "/assets/",
     title: "RemberU",
     github: "https://github.com/hannatonthat/RemberU-HTN2024",
-    devpost: "https://devpost.com/software/orientu",
-    summary: ["", "", ""],
+    summary: "A memory recall device and connection platform featuring face recognition, lip reading, and conversation summarization. Designed in 36 hours at Hack The North 2024.",
     skills: ["Flutter", "Dart", "Firebase", "Flask", "OpenCV", "YOLOv8", "PyTorch", "Python"]
   },
   {
     image: "/assets/",
-    title: "Project 3",
-    summary: ["", "", ""],
-    skills: []
+    title: "BullBot",
+    github: "https://github.com/hannatonthat/BullBot",
+    summary: "A ML trading bot using ensemble learning and time series forecasting with backtesting and Dockerized deployment, designed to identify bullish signals and beat the S&P 500.",
+    skills: ["Next.js", "React", "TypeScript", "FastAPI", "Scikit-learn", "XGBoost", "yfinance", "Docker", "Python"]
   },
   {
     image: "/assets/",
-    title: "Project 4",
-    summary: ["", "", ""],
-    skills: []
+    title: "Minerva",
+    github: "https://github.com/hannatonthat/Minerva",
+    summary: "Playable AI chess engine designed for players of all skill levels. It simulates strategies and remains accessible to all, from beginners to grandmasters.",
+    skills: ["Next.js", "React", "TypeScript", "chess.js", "FastAPI", "python-chess", "PyTorch", "Docker", "Python"]
+  },
+  {
+    image: "/assets/",
+    title: "CustomGPT",
+    github: "https://github.com/hannatonthat/CustomGPT",
+    summary: "Customizable LLM based on the Llama architecture for efficient text generation, fine-tuned using the Tiny Shakespeare dataset to a training loss of 0.32.",
+    skills: ["PyTorch", "Python"]
+  },
+  {
+    image: "/assets/",
+    title: "NeuroNet",
+    github: "https://github.com/hannatonthat/NeuroNet",
+    summary: "A neural network built from scratch with 0 dependencies, trained on the MNIST dataset with a 96% accuracy.",
+    skills: ["C++"]
+  },
+  {
+    image: "/assets/",
+    title: "DiaDetect",
+    github: "https://github.com/hannatonthat/DiaDetect",
+    summary: "A ML model designed to assist in the early detection and management of diabetes risk, optimized to a 92% accuracy using the Pima Indians dataset.",
+    skills: ["Scikit-learn", "Python"]
   }
 ];
 

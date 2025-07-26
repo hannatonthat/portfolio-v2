@@ -85,15 +85,6 @@ export default function Home() {
           <p className="">From backend systems to machine learning models, I&apos;m committed to building high-quality applications that bring real value to the world.</p>
           <p className="">I&apos;m always eager to meet like-minded individuals and discuss exciting projects. Feel free to reach out!</p>
         </div>
-        <div className="">
-          <Image
-          src="/assets/profile.png"
-          alt=""
-          width="500"
-          height="500"
-          className="rounded-full bg-zinc-200"
-        />
-        </div>
       </div>
     </section>
   )

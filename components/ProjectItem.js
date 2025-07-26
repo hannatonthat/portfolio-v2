@@ -4,18 +4,17 @@ import Image from "next/image";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { faLaptopCode } from '@fortawesome/free-solid-svg-icons'
 
-export default function ProjectItem({ image, title, github, devpost, summary = [], skills = [] }) {
+export default function ProjectItem({ image, title, github, summary, skills = [] }) {
   return (
-    <div className="mt-8 mb-8">
+    <div className="mt-8">
       {image && (
         <Image
           src={image}
           alt=""
           width="40"
           height="40"
-          className="object-contain mb-2"
+          className="object-contain"
         />
       )}
 
@@ -25,27 +24,16 @@ export default function ProjectItem({ image, title, github, devpost, summary = [
           href={github} 
           target="_blank" 
           rel="noopener noreferrer" 
-          className="inline-block mt-5 mb-4"
+          className="inline-block mt-3"
         >
           <FontAwesomeIcon icon={faGithub} className="text-xl" />
         </a>
-        <a 
-          href={devpost} 
-          target="_blank" 
-          rel="noopener noreferrer" 
-          className="inline-block mt-5 mb-4"
-        >
-          <FontAwesomeIcon icon={faLaptopCode} className="text-xl" />
-        </a>
-        
       </div>
 
-      {summary.length > 0 && (
-        <ul className="list-disc list-inside">
-          {summary.map((point, idx) => (
-            <li key={idx}>{point}</li>
-          ))}
-        </ul>
+      {summary && (
+        <p className="">
+          {summary}
+        </p>
       )}
 
       {skills.length > 0 && (
