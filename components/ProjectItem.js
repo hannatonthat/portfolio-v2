@@ -5,19 +5,9 @@ import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
-export default function ProjectItem({ image, title, github, summary, skills = [], onSkillClick }) {
+export default function ProjectItem({ title, github, summary, skills = [], onSkillClick }) {
   return (
     <div className="mt-8">
-      {image && (
-        <Image
-          src={image}
-          alt=""
-          width="40"
-          height="40"
-          className="object-contain"
-        />
-      )}
-
       <div className="flex gap-2">
         <a 
           href={github} 

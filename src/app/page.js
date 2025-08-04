@@ -3,8 +3,6 @@
 import Experience from '@components/Experience';
 import Project from '@components/Project';
 
-import Image from "next/image";
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
@@ -53,7 +51,7 @@ export default function Home() {
         </div>
 
         <h1 className="">Recently...</h1>
-        <ul className="list-disc list-inside">
+        <ul className="list-disc list-outside pl-6">
           <li>Mechatronics Engineering @ University of Waterloo</li>
           <li>Backend Developer & Data Engineer @ Government of Canada</li>
           <li>Building a ML trading bot with predictive models, backtesting, and Docker deployment</li>
