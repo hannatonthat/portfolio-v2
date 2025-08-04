@@ -3,6 +3,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 html {
+  scroll-behavior: smooth;
   @apply bg-white text-black;
 }
 
