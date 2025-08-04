@@ -5,16 +5,11 @@ export default function Experience() {
     <main className="">
       <h1 className="">Experience</h1>
       <ExperienceItem 
-        image="/assets/pco.png"
+        image="/assets/government.png"
         company="Government of Canada" 
-        title="Backend Developer"
+        title="Backend Developer & Data Engineer"
         date="May 2025 - Present"
         location="Ottawa, ON"
-        summary={[
-          "",
-          "",
-          ""
-        ]}
       />
       <ExperienceItem 
         image="/assets/chusj.png"
@@ -22,11 +17,6 @@ export default function Experience() {
         title="Software Developer" 
         date="May 2024 - Aug 2024"
         location="Montreal, QC"
-        summary={[
-          "",
-          "",
-          ""
-        ]}
       />
       <ExperienceItem 
         image="/assets/dawson.png"
@@ -34,11 +24,6 @@ export default function Experience() {
         title="Software Developer" 
         date="Jan 2024 - May 2024"
         location="Montreal, QC"
-        summary={[
-          "",
-          "",
-          ""
-        ]}
       />
     </main>
   )
