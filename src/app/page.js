@@ -32,7 +32,7 @@ export default function Home() {
             rel="noopener noreferrer" 
             className=""
           >
-            <FontAwesomeIcon icon={faGithub} className="text-xl transition-transform duration-300 hover:scale-110" />
+            <FontAwesomeIcon icon={faGithub} className="text-2xl transition-transform duration-300 hover:scale-110" />
           </a>
 
           <a 
@@ -41,18 +41,18 @@ export default function Home() {
             rel="noopener noreferrer" 
             className=""
           >
-            <FontAwesomeIcon icon={faLinkedin} className="text-xl transition-transform duration-300 hover:scale-110" />
+            <FontAwesomeIcon icon={faLinkedin} className="text-2xl transition-transform duration-300 hover:scale-110" />
           </a>
 
           <button
             onClick={copyEmail}
             className=""
           >
-            <FontAwesomeIcon icon={faEnvelope} className="text-xl cursor-pointer transition-transform duration-300 hover:scale-110" />
+            <FontAwesomeIcon icon={faEnvelope} className="text-2xl cursor-pointer transition-transform duration-300 hover:scale-110" />
           </button>
         </div>
 
-        <h3 className="">Recently...</h3>
+        <h1 className="">Recently...</h1>
         <ul className="list-disc list-inside">
           <li>Mechatronics Engineering @ University of Waterloo</li>
           <li>Backend Developer & Data Engineer @ Government of Canada</li>
@@ -60,7 +60,7 @@ export default function Home() {
         </ul>
         <h1 className="">About</h1>
         <div className="flex gap-8">
-          <div className="flex flex-col justify-center">
+          <div className="flex flex-col justify-center space-y-4">
             <p className="">Passionate about software development, AI/ML, and robotics, I&apos;m currently studying Mechatronics Engineering at the University of Waterloo.</p>
             <p className="">From backend systems to machine learning models, I&apos;m committed to building high-quality applications that bring real value to the world.</p>
             <p className="">I&apos;m always eager to meet like-minded individuals and discuss exciting projects. Feel free to reach out!</p>

@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default function ExperienceItem({image, company, title, date, location}) {
+export default function ExperienceItem({ image, company, title, date, location }) {
   return (
     <div className="flex">
       <div className="flex flex-col items-center mr-4">
@@ -17,7 +17,7 @@ export default function ExperienceItem({image, company, title, date, location}) 
 
       <div className="mr-4 mb-4 flex justify-between items-start w-full">
           <div className="flex-grow">
-            <p className="!m-0 font-bold">{company}</p>
+            <h3 className="!m-0">{company}</h3>
             <p className="!m-0 italic">{title}</p>
           </div>
           <div className="text-right">
