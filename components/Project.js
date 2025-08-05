@@ -78,7 +78,7 @@ export default function Project() {
       <div className="relative w-full">
         <button
           onClick={handleSearch}
-          className="absolute left-2 top-1/2 transform -translate-y-1/2 text-zinc-400 dark:text-zinc-500 hover:text-black dark:hover:text-white"
+          className="cursor-pointer absolute left-2 top-1/2 transform -translate-y-1/2 text-zinc-400 dark:text-zinc-500 hover:text-black dark:hover:text-white"
         >
           <FontAwesomeIcon icon={faMagnifyingGlass} />
         </button>
@@ -96,7 +96,7 @@ export default function Project() {
             setTempQuery("");
             setQuery("");
           }}
-          className="absolute right-2 top-3.5 transform -translate-y-1/2 text-zinc-400 dark:text-zinc-500 hover:text-black dark:hover:text-white text-lg leading-none"
+          className="cursor-pointer absolute right-2 top-3.5 transform -translate-y-1/2 text-zinc-400 dark:text-zinc-500 hover:text-black dark:hover:text-white text-lg leading-none"
         >
           x
         </button>

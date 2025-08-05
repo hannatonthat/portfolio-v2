@@ -1,7 +1,5 @@
 "use client";
 
-import Image from "next/image";
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
@@ -24,13 +22,13 @@ export default function ProjectItem({ title, github, summary, skills = [], onSki
       </div>
 
       {summary && (
-        <p className="">
+        <p className="mt-2">
           {summary}
         </p>
       )}
 
       {skills.length > 0 && (
-        <div className="flex flex-wrap gap-2 mt-3">
+        <div className="flex flex-wrap gap-2 mt-4">
           {skills.map((skill, idx) => (
             <span
               key={idx}
