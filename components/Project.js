@@ -22,14 +22,14 @@ const allProjects = [
   {
     title: "BullBot",
     github: "https://github.com/hannatonthat/BullBot",
-    summary: "A ML trading bot using ensemble learning and time series forecasting with backtesting and Dockerized deployment, designed to identify bullish signals and beat the S&P 500.",
-    skills: ["Next.js", "React", "TypeScript", "FastAPI", "Scikit-learn", "XGBoost", "yfinance", "Docker", "Python"]
+    summary: "A ML trading bot using ensemble learning and time series forecasting with backtesting, designed to identify bullish signals and beat the S&P 500.",
+    skills: ["Next.js", "React", "TypeScript", "FastAPI", "Scikit-learn", "XGBoost", "yfinance", "Python"]
   },
   {
     title: "Minerva",
     github: "https://github.com/hannatonthat/Minerva",
     summary: "Playable AI chess engine designed for players of all skill levels. It simulates strategies and remains accessible to all, from beginners to grandmasters.",
-    skills: ["Next.js", "React", "TypeScript", "chess.js", "FastAPI", "python-chess", "PyTorch", "Docker", "Python"]
+    skills: ["Next.js", "React", "TypeScript", "chess.js", "FastAPI", "python-chess", "PyTorch", "Python"]
   },
   {
     title: "CustomGPT",
@@ -78,7 +78,7 @@ export default function Project() {
       <div className="relative w-full">
         <button
           onClick={handleSearch}
-          className="cursor-pointer absolute left-2 top-1/2 transform -translate-y-1/2 text-zinc-400 dark:text-zinc-500 hover:text-black dark:hover:text-white"
+          className="cursor-pointer absolute left-2 top-1/2 transform -translate-y-1/2 text-zinc-400 dark:text-zinc-500 transition-transform duration-300 hover:scale-110 hover:text-black dark:hover:text-white"
         >
           <FontAwesomeIcon icon={faMagnifyingGlass} />
         </button>
@@ -96,7 +96,7 @@ export default function Project() {
             setTempQuery("");
             setQuery("");
           }}
-          className="cursor-pointer absolute right-2 top-3.5 transform -translate-y-1/2 text-zinc-400 dark:text-zinc-500 hover:text-black dark:hover:text-white text-lg leading-none"
+          className="cursor-pointer absolute right-2 top-3.5 transform -translate-y-1/2 text-zinc-400 dark:text-zinc-500 transition-transform duration-300 hover:scale-110 hover:text-black dark:hover:text-white text-lg leading-none"
         >
           x
         </button>
