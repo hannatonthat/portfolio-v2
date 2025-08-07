@@ -54,10 +54,18 @@ const allProjects = [
 export default function Project() {
   const [query, setQuery] = useState("");
   const [tempQuery, setTempQuery] = useState("");
+  const [projectBaseIndex, setProjectBaseIndex] = useState(8);
 
   const handleSearch = () => setQuery(tempQuery);
+
   const handleKeyDown = (e) => {
     if (e.key === "Enter") handleSearch();
+  };
+
+  const handleClear = () => {
+    setTempQuery("");
+    setQuery("");
+    setProjectBaseIndex(0);
   };
 
   const filteredProjects = allProjects.filter(project =>
@@ -66,15 +74,13 @@ export default function Project() {
     )
   );
 
-  const baseIndex = 8;
-
   return (
     <main className="">
-      <StaggeredLine index={baseIndex}>
+      <StaggeredLine index={8}>
         <h2 className="">Projects</h2>
       </StaggeredLine>
 
-      <StaggeredLine index={baseIndex + 1}>
+      <StaggeredLine index={9}>
         <div className="relative w-full">
           <button
             onClick={handleSearch}
@@ -92,10 +98,7 @@ export default function Project() {
           />
           {tempQuery && (
             <button
-              onClick={() => {
-                setTempQuery("");
-                setQuery("");
-              }}
+              onClick={handleClear}
               className="cursor-pointer absolute right-2 top-3.5 transform -translate-y-1/2 text-zinc-400 dark:text-zinc-500 transition-transform duration-300 hover:scale-110 hover:text-black dark:hover:text-white text-lg leading-none"
             >
               x
@@ -104,10 +107,10 @@ export default function Project() {
         </div>
       </StaggeredLine>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
         {filteredProjects.length > 0 ? (
           filteredProjects.map((project, idx) => (
-            <StaggeredLine key={idx} index={baseIndex + 2 + idx}>
+            <StaggeredLine key={idx} index={projectBaseIndex + 2 + idx}>
               <ProjectItem
                 title={project.title}
                 github={project.github}
@@ -122,7 +125,7 @@ export default function Project() {
             </StaggeredLine>
           ))
         ) : (
-          <StaggeredLine index={baseIndex + 2 + filteredProjects.length}>
+          <StaggeredLine index={projectBaseIndex + 2 + filteredProjects.length}>
             <p className="mt-8">No matching projects found.</p>
           </StaggeredLine>
         )}

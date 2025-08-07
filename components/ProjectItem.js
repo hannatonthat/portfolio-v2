@@ -5,7 +5,7 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 export default function ProjectItem({ title, github, summary, skills = [], onSkillClick }) {
   return (
-    <div className="mt-8">
+    <div className="mt-6">
       <div className="flex gap-2">
         <a 
           href={github} 
