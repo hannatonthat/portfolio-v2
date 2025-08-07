@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import ProjectItem from "@components/ProjectItem";
-
+import StaggeredLine from "@components/StaggeredLine";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 
@@ -55,14 +55,9 @@ export default function Project() {
   const [query, setQuery] = useState("");
   const [tempQuery, setTempQuery] = useState("");
 
-  const handleSearch = () => {
-    setQuery(tempQuery);
-  };
-
+  const handleSearch = () => setQuery(tempQuery);
   const handleKeyDown = (e) => {
-    if (e.key === "Enter") {
-      handleSearch();
-    }
+    if (e.key === "Enter") handleSearch();
   };
 
   const filteredProjects = allProjects.filter(project =>
@@ -71,59 +66,67 @@ export default function Project() {
     )
   );
 
+  const baseIndex = 14;
+
   return (
     <main className="">
-      <h1 className="">Projects</h1>
+      <StaggeredLine index={baseIndex}>
+        <h1 className="">Projects</h1>
+      </StaggeredLine>
 
-      <div className="relative w-full">
-        <button
-          onClick={handleSearch}
-          className="cursor-pointer absolute left-2 top-1/2 transform -translate-y-1/2 text-zinc-400 dark:text-zinc-500 transition-transform duration-300 hover:scale-110 hover:text-black dark:hover:text-white"
-        >
-          <FontAwesomeIcon icon={faMagnifyingGlass} />
-        </button>
-        <input
-          type="text"
-          placeholder="Search by skill"
-          value={tempQuery}
-          onChange={e => setTempQuery(e.target.value)}
-          onKeyDown={handleKeyDown}
-          className="w-full pl-9 p-1 bg-zinc-200 dark:bg-zinc-800 rounded-md focus:outline-2 focus:outline-zinc-400 dark:focus:outline-zinc-500 text-black dark:text-white"
-        />
-        {tempQuery && (
-        <button
-          onClick={() => {
-            setTempQuery("");
-            setQuery("");
-          }}
-          className="cursor-pointer absolute right-2 top-3.5 transform -translate-y-1/2 text-zinc-400 dark:text-zinc-500 transition-transform duration-300 hover:scale-110 hover:text-black dark:hover:text-white text-lg leading-none"
-        >
-          x
-        </button>
-      )}
-      </div>
+      <StaggeredLine index={baseIndex + 1}>
+        <div className="relative w-full">
+          <button
+            onClick={handleSearch}
+            className="cursor-pointer absolute left-2 top-1/2 transform -translate-y-1/2 text-zinc-400 dark:text-zinc-500 transition-transform duration-300 hover:scale-110 hover:text-black dark:hover:text-white"
+          >
+            <FontAwesomeIcon icon={faMagnifyingGlass} />
+          </button>
+          <input
+            type="text"
+            placeholder="Search by skill"
+            value={tempQuery}
+            onChange={e => setTempQuery(e.target.value)}
+            onKeyDown={handleKeyDown}
+            className="w-full pl-9 p-1 bg-zinc-200 dark:bg-zinc-800 rounded-md focus:outline-2 focus:outline-zinc-400 dark:focus:outline-zinc-500 text-black dark:text-white"
+          />
+          {tempQuery && (
+            <button
+              onClick={() => {
+                setTempQuery("");
+                setQuery("");
+              }}
+              className="cursor-pointer absolute right-2 top-3.5 transform -translate-y-1/2 text-zinc-400 dark:text-zinc-500 transition-transform duration-300 hover:scale-110 hover:text-black dark:hover:text-white text-lg leading-none"
+            >
+              x
+            </button>
+          )}
+        </div>
+      </StaggeredLine>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {filteredProjects.length > 0 ? (
           filteredProjects.map((project, idx) => (
-            <ProjectItem
-              key={idx}
-              title={project.title}
-              github={project.github}
-              devpost={project.devpost}
-              summary={project.summary}
-              skills={project.skills}
-              onSkillClick={(skill) => {
-              setTempQuery(skill);
-              setQuery(skill);
-            }}
-            />
+            <StaggeredLine key={idx} index={baseIndex + 2 + idx}>
+              <ProjectItem
+                title={project.title}
+                github={project.github}
+                devpost={project.devpost}
+                summary={project.summary}
+                skills={project.skills}
+                onSkillClick={(skill) => {
+                  setTempQuery(skill);
+                  setQuery(skill);
+                }}
+              />
+            </StaggeredLine>
           ))
         ) : (
-          <p className="mt-8">No matching projects found.</p>
+          <StaggeredLine index={baseIndex + 2 + filteredProjects.length}>
+            <p className="mt-8">No matching projects found.</p>
+          </StaggeredLine>
         )}
       </div>
-  
     </main>
-  )
+  );
 }
