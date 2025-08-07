@@ -1,5 +1,4 @@
 'use client';
-import React from 'react';
 
 export default function StaggeredLine({ children, index = 0, delay = 0.15 }) {
   return (

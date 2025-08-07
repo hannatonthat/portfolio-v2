@@ -5,12 +5,6 @@ import Experience from '@components/Experience';
 import Project from '@components/Project';
 
 export default function Home() {
-  const copyEmail = () => {
-    navigator.clipboard.writeText("htonthat@uwaterloo.ca")
-      .then(() => alert("Email copied!"))
-      .catch(err => console.error("Failed to copy email:", err));
-  };
-
   let index = 0;
 
   return (
@@ -22,13 +16,13 @@ export default function Home() {
 
         <ul className="list-disc list-outside pl-6">
           <StaggeredLine index={index++}>
-            <li>Engineer focused on backend systems, AI/ML, and robotics</li>
+            <li>Engineer and developer building thoughtful systems across backend, AI/ML, and robotics</li>
           </StaggeredLine>
           <StaggeredLine index={index++}>
-            <li>Currently studying Mechatronics Engineering at the University of Waterloo</li>
+            <li>Studying Mechatronics Engineering @ UWaterloo— I write code more than I wire circuits</li>
           </StaggeredLine>
           <StaggeredLine index={index++}>
-            <li>Driven by building systems that work well, feel right, and make a difference</li>
+            <li>Focused on software that works well, feels right, and genuinely makes a difference</li>
           </StaggeredLine>
         </ul>
       </section>
