@@ -66,12 +66,12 @@ export default function Project() {
     )
   );
 
-  const baseIndex = 14;
+  const baseIndex = 8;
 
   return (
     <main className="">
       <StaggeredLine index={baseIndex}>
-        <h1 className="">Projects</h1>
+        <h2 className="">Projects</h2>
       </StaggeredLine>
 
       <StaggeredLine index={baseIndex + 1}>

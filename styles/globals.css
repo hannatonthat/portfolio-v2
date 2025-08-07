@@ -18,11 +18,11 @@ body {
 }
 
 h1 {
-  @apply text-xl font-bold mt-6 mb-6
+  @apply text-2xl font-bold mt-6 mb-6
 }
 
 h2 {
-  @apply text-lg font-bold mt-4 mb-4
+  @apply text-xl font-bold mt-4 mb-4
 }
 
 h3 {

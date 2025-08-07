@@ -4,12 +4,12 @@ import ExperienceItem from "@components/ExperienceItem";
 import StaggeredLine from "@components/StaggeredLine";
 
 export default function Experience() {
-  const baseIndex = 10;
+  const baseIndex = 4;
 
   return (
     <main className="">
       <StaggeredLine index={baseIndex}>
-        <h1 className="">Experience</h1>
+        <h2 className="">Experience</h2>
       </StaggeredLine>
 
       <StaggeredLine index={baseIndex + 1}>
