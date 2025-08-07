@@ -10,31 +10,31 @@ const allProjects = [
   {
     title: "Match-A-Wish",
     github: "https://github.com/hannatonthat/MatchAWish-McHacks2025",
-    summary: "AI-powered matching platform to connect donor surplus to hospitals in need. Designed in 24 hours, winning best use of AI and Databricks at McHacks 2025.",
+    summary: "AI-powered matching platform to connect donor surplus to hospitals in need. Designed in 24 hours, winning at McHacks 2025.",
     skills: ["React", "Node.js", "OpenAI", "Auth0", "Databricks", "JavaScript"]
   },
   {
     title: "RemberU",
     github: "https://github.com/hannatonthat/RemberU-HTN2024",
-    summary: "A memory recall device and connection platform featuring face recognition, lip reading, and conversation summarization. Designed in 36 hours at Hack The North 2024.",
+    summary: "A memory aid device with face recognition, lip reading, and conversation summarization. Designed in 36 hours at Hack The North 2024.",
     skills: ["Flutter", "Dart", "Firebase", "Flask", "OpenCV", "YOLOv8", "PyTorch", "Python"]
   },
   {
     title: "BullBot",
     github: "https://github.com/hannatonthat/BullBot",
-    summary: "A ML trading bot using ensemble learning and time series forecasting with backtesting, designed to identify bullish signals and beat the S&P 500.",
+    summary: "A ML trading bot using ensemble learning and time series forecasting with backtesting to identify bullish signals and beat the S&P 500.",
     skills: ["Next.js", "React", "TypeScript", "FastAPI", "Scikit-learn", "XGBoost", "yfinance", "Python"]
   },
   {
     title: "Minerva",
     github: "https://github.com/hannatonthat/Minerva",
-    summary: "Playable AI chess engine designed for players of all skill levels. It simulates strategies and remains accessible to all, from beginners to grandmasters.",
+    summary: "Playable ML chess engine trained on grandmaster games to evaluate board states and suggest optimal moves in real time.",
     skills: ["Next.js", "React", "TypeScript", "chess.js", "FastAPI", "python-chess", "PyTorch", "Python"]
   },
   {
     title: "CustomGPT",
     github: "https://github.com/hannatonthat/CustomGPT",
-    summary: "Customizable LLM based on the Llama architecture for efficient text generation, fine-tuned using the Tiny Shakespeare dataset to a training loss of 0.32.",
+    summary: "Customizable LLM for efficient text generation, fine-tuned using the Tiny Shakespeare dataset to a training loss of 0.32.",
     skills: ["PyTorch", "Python"]
   },
   {
@@ -46,7 +46,7 @@ const allProjects = [
   {
     title: "DiaDetect",
     github: "https://github.com/hannatonthat/DiaDetect",
-    summary: "A ML model designed to assist in the early detection and management of diabetes risk, optimized to a 92% accuracy using the Pima Indians dataset.",
+    summary: "A ML model designed to assist in the early detection of diabetes risk, optimized to a 92% accuracy using the Pima Indians dataset.",
     skills: ["Scikit-learn", "Python"]
   }
 ];
@@ -107,7 +107,7 @@ export default function Project() {
         </div>
       </StaggeredLine>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-2">
         {filteredProjects.length > 0 ? (
           filteredProjects.map((project, idx) => (
             <StaggeredLine key={idx} index={projectBaseIndex + 2 + idx}>
