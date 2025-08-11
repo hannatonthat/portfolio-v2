@@ -8,7 +8,7 @@ export default function CustomCursor() {
   useEffect(() => {
     let mouseX = 0, mouseY = 0;
     let cursorX = 0, cursorY = 0;
-    const speed = 0.1;
+    const speed = 0.2;
 
     const move = (e) => {
       mouseX = e.clientX;
