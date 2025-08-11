@@ -4,15 +4,15 @@ import ExperienceItem from "@components/ExperienceItem";
 import StaggeredLine from "@components/StaggeredLine";
 
 export default function Experience() {
-  const baseIndex = 4;
+  let index = 6;
 
   return (
     <main className="">
-      <StaggeredLine index={baseIndex}>
+      <StaggeredLine index={index}>
         <h2 className="">Experience</h2>
       </StaggeredLine>
 
-      <StaggeredLine index={baseIndex + 1}>
+      <StaggeredLine index={++index}>
         <ExperienceItem 
           image="/assets/government.png"
           company="Government of Canada" 
@@ -22,7 +22,7 @@ export default function Experience() {
         />
       </StaggeredLine>
 
-      <StaggeredLine index={baseIndex + 2}>
+      <StaggeredLine index={++index}>
         <ExperienceItem 
           image="/assets/chusj.png"
           company="CHU Sainte-Justine" 
@@ -32,7 +32,7 @@ export default function Experience() {
         />
       </StaggeredLine>
 
-      <StaggeredLine index={baseIndex + 3}>
+      <StaggeredLine index={++index}>
         <ExperienceItem 
           image="/assets/dawson.png"
           company="Dawson College" 

@@ -54,7 +54,6 @@ const allProjects = [
 export default function Project() {
   const [query, setQuery] = useState("");
   const [tempQuery, setTempQuery] = useState("");
-  const [projectBaseIndex, setProjectBaseIndex] = useState(8);
 
   const handleSearch = () => setQuery(tempQuery);
 
@@ -65,7 +64,6 @@ export default function Project() {
   const handleClear = () => {
     setTempQuery("");
     setQuery("");
-    setProjectBaseIndex(0);
   };
 
   const filteredProjects = allProjects.filter(project =>
@@ -74,13 +72,15 @@ export default function Project() {
     )
   );
 
+  let index = 10
+
   return (
     <main className="">
-      <StaggeredLine index={8}>
+      <StaggeredLine index={index}>
         <h2 className="">Projects</h2>
       </StaggeredLine>
 
-      <StaggeredLine index={9}>
+      <StaggeredLine index={++index}>
         <div className="relative w-full">
           <button
             onClick={handleSearch}
@@ -110,7 +110,7 @@ export default function Project() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-2">
         {filteredProjects.length > 0 ? (
           filteredProjects.map((project, idx) => (
-            <StaggeredLine key={idx} index={projectBaseIndex + 2 + idx}>
+            <StaggeredLine key={idx} index={index + idx}>
               <ProjectItem
                 title={project.title}
                 github={project.github}
@@ -125,7 +125,7 @@ export default function Project() {
             </StaggeredLine>
           ))
         ) : (
-          <StaggeredLine index={projectBaseIndex + 2 + filteredProjects.length}>
+          <StaggeredLine index={index++}>
             <p className="mt-8">No matching projects found.</p>
           </StaggeredLine>
         )}

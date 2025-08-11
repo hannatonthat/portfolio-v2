@@ -34,7 +34,6 @@ export default function RootLayout({ children }) {
         className={`${openSans.className} max-w-screen-md mx-auto px-4 bg-black text-white`}
       >
         <Theme>
-          <Navbar />
           <CustomCursor />
           <main>{children}</main>
           <Footer />

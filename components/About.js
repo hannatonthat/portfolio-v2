@@ -3,12 +3,12 @@
 import StaggeredLine from "@components/StaggeredLine";
 
 export default function About() {
-  let index = 0;
+  let index = 2;
 
   return (
     <div>
       <StaggeredLine index={index}>
-        <h1>About</h1>
+        <h2>About</h2>
       </StaggeredLine>
 
       <ul className="list-disc list-outside pl-6">
