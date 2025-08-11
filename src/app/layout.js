@@ -2,6 +2,7 @@ import "@styles/globals.css";
 import Navbar from "@components/Navbar";
 import Footer from "@components/Footer";
 import Theme from "@components/Theme";
+import CustomCursor from "@components/CustomCursor";
 
 import { Open_Sans } from "next/font/google";
 
@@ -34,6 +35,7 @@ export default function RootLayout({ children }) {
       >
         <Theme>
           <Navbar />
+          <CustomCursor />
           <main>{children}</main>
           <Footer />
         </Theme>
