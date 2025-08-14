@@ -11,7 +11,7 @@ export default function Navbar() {
 
   return (
     <nav className="backdrop-blur-sm">
-      <div className="max-w-screen-md mx-auto px-4 py-8">
+      <div className="max-w-screen-md mx-auto py-8">
         <ul className="flex justify-between items-center w-full">
           <li>
             <Link
@@ -46,15 +46,6 @@ export default function Navbar() {
                 Projects
               </Link>
             </li>
-            <button
-              onClick={() => setDarkMode(!darkMode)}
-              aria-label="Toggle Dark Mode"
-            >
-              <FontAwesomeIcon
-                icon={darkMode ? faSun : faMoon}
-                className="text-lg cursor-pointer transition-transform duration-300 hover:scale-110"
-              />
-            </button>
           </div>
         </ul>
       </div>
