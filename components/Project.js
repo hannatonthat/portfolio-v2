@@ -72,7 +72,7 @@ export default function Project() {
     )
   );
 
-  let index = 10
+  let index = 11
 
   return (
     <main className="">
