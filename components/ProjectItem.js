@@ -15,7 +15,7 @@ export default function ProjectItem({ title, github, summary, skills = [], onSki
         >
           <FontAwesomeIcon
             icon={faGithub}
-            className="text-lg transition-transform duration-300 hover:scale-110"
+            className="text-2xl transition-transform duration-300 hover:scale-110"
           />
         </a>
         <h3 className="">{title}</h3>

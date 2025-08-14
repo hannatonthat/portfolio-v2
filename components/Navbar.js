@@ -1,14 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { useContext } from "react";
-import { ThemeContext } from "@components/Theme";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSun, faMoon } from "@fortawesome/free-solid-svg-icons";
 
 export default function Navbar() {
-  const { darkMode, setDarkMode } = useContext(ThemeContext);
-
   return (
     <nav className="backdrop-blur-sm">
       <div className="max-w-screen-md mx-auto py-8">
