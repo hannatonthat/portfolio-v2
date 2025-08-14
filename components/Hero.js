@@ -14,9 +14,9 @@ export default function Hero() {
   const [displayedText, setDisplayedText] = useState("");
   const [showCursor, setShowCursor] = useState(true);
   const phrases = ["Software Developer", "Machine Learning Engineer", "Robotics Engineer"];
-  const typingSpeed = 100;
+  const typingSpeed = 50;
   const deletingSpeed = 50;
-  const pauseTime = 1000;
+  const pauseTime = 1250;
 
   useEffect(() => {
     let timeout;
