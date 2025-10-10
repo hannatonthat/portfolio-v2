@@ -1,30 +1,24 @@
 import Image from "next/image";
 
-export default function ExperienceItem({ image, company, title, date, location }) {
+export default function ExperienceItem({ image, company, companyLink, title }) {
   return (
-    <div className="flex">
-      <div className="flex flex-col items-center mr-4">
-        <div className="mt-1">
-          <Image
-            src={image}
-            alt=""
-            width={48}
-            height={48}
-            className="object-contain rounded-lg"
-          />
-        </div>
-      </div>
-
-      <div className="mr-4 mb-4 flex justify-between items-start w-full">
-          <div className="flex-grow">
-            <h3 className="!m-0">{company}</h3>
-            <p className="!m-0 italic">{title}</p>
-          </div>
-          <div className="text-right">
-            <p className="!m-0">{date}</p>
-            <p className="!m-0 italic">{location}</p>
-          </div>
-        </div>
-    </div>
+    <li className="list-disc list-inside">
+      <span className="">{title}</span>
+      <Image
+        src={image}
+        alt=""
+        width={20}
+        height={20}
+        className="inline-block object-contain rounded-lg mx-2 h-5 w-5 align-middle"
+      />
+      <a
+        href={companyLink}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="underline"
+      >
+        {company}
+      </a>
+    </li>
   );
 }

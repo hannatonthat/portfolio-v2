@@ -10,7 +10,7 @@ const allProjects = [
   {
     title: "Match-A-Wish",
     github: "https://github.com/hannatonthat/MatchAWish-McHacks2025",
-    summary: "AI-powered matching platform to connect donor surplus to hospitals in need. Designed in 24 hours, winning at McHacks 2025.",
+    summary: "AI matching platform to connect donor surplus to children's hospitals in need. Designed in 24 hours, winning at McHacks 2025.",
     skills: ["React", "Node.js", "OpenAI", "Auth0", "Databricks", "JavaScript"]
   },
   {
@@ -18,6 +18,12 @@ const allProjects = [
     github: "https://github.com/hannatonthat/RemberU-HTN2024",
     summary: "A memory aid device with face recognition, lip reading, and conversation summarization. Designed in 36 hours at Hack The North 2024.",
     skills: ["Flutter", "Dart", "Firebase", "Flask", "OpenCV", "YOLOv8", "PyTorch", "Python"]
+  },
+  {
+    title: "PrepPal",
+    github: "https://github.com/hannatonthat/PrepPal",
+    summary: "AI mock interview platform that generates behavioral and technical interview questions with instant feedback and performance insights.",
+    skills: ["Next.js", "TypeScript", "FastAPI", "LangChain", "OpenAI", "PostgreSQL", "Prisma"]
   },
   {
     title: "BullBot",
@@ -38,16 +44,16 @@ const allProjects = [
     skills: ["PyTorch", "Python"]
   },
   {
-    title: "NeuroNet",
-    github: "https://github.com/hannatonthat/NeuroNet",
-    summary: "A neural network built from scratch with 0 dependencies, trained on the MNIST dataset with a 96% accuracy.",
-    skills: ["C++"]
-  },
-  {
     title: "DiaDetect",
     github: "https://github.com/hannatonthat/DiaDetect",
     summary: "A ML model designed to assist in the early detection of diabetes risk, optimized to a 92% accuracy using the Pima Indians dataset.",
     skills: ["Scikit-learn", "Python"]
+  },
+  {
+    title: "NeuroNet",
+    github: "https://github.com/hannatonthat/NeuroNet",
+    summary: "A neural network built from scratch with 0 dependencies, trained on the MNIST dataset with a 96% accuracy.",
+    skills: ["C++"]
   }
 ];
 

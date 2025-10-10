@@ -24,7 +24,7 @@ export default function Footer() {
           rel="noopener noreferrer" 
           className=""
         >
-          <FontAwesomeIcon icon={faGithub} className="text-2xl transition-transform duration-300 hover:scale-110" />
+          <FontAwesomeIcon icon={faGithub} className="text-xl transition-transform duration-300 hover:scale-110" />
         </a>
 
         <a 
@@ -33,14 +33,14 @@ export default function Footer() {
           rel="noopener noreferrer" 
           className=""
         >
-          <FontAwesomeIcon icon={faLinkedin} className="text-2xl transition-transform duration-300 hover:scale-110" />
+          <FontAwesomeIcon icon={faLinkedin} className="text-xl transition-transform duration-300 hover:scale-110" />
         </a>
 
         <button
           onClick={copyEmail}
           className=""
         >
-          <FontAwesomeIcon icon={faEnvelope} className="text-2xl cursor-pointer transition-transform duration-300 hover:scale-110" />
+          <FontAwesomeIcon icon={faEnvelope} className="text-xl cursor-pointer transition-transform duration-300 hover:scale-110" />
         </button>
       </div>
       <p>2025 © Hanna Ton That</p>

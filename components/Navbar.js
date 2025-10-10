@@ -45,7 +45,7 @@ export default function Navbar() {
             >
               <FontAwesomeIcon
                 icon={darkMode ? faSun : faMoon}
-                className="text-lg cursor-pointer transition-transform duration-300 hover:scale-110"
+                className="text-xl cursor-pointer transition-transform duration-300 hover:scale-110"
               />
             </button>
           </div>
