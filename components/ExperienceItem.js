@@ -9,7 +9,7 @@ export default function ExperienceItem({ image, company, companyLink, title }) {
         alt=""
         width={20}
         height={20}
-        className="inline-block object-contain rounded-lg mx-2 h-5 w-5 align-middle"
+        className="inline-block object-contain rounded-lg mx-1 h-5 w-5 align-middle"
       />
       <a
         href={companyLink}

@@ -21,7 +21,7 @@ export default function About() {
               alt="Shopify logo"
               width={20}
               height={20}
-              className="inline-block mx-2 h-5 w-5 align-middle"
+              className="inline-block mx-1 h-5 w-5 align-middle"
             />
             <a
               href="https://www.shopify.com/"
@@ -41,7 +41,7 @@ export default function About() {
               alt="Waterloo logo"
               width={20}
               height={20}
-              className="inline-block mx-2 h-5 w-5 align-middle"
+              className="inline-block mx-1 h-5 w-5 align-middle"
             />
             <a
               href="https://uwaterloo.ca/"
