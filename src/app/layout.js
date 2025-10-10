@@ -19,19 +19,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <head>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              (function () {
-                document.documentElement.classList.add('dark');
-              })();
-            `,
-          }}
-        />
-      </head>
+      <head></head>
       <body
-        className={`${openSans.className} max-w-screen-md mx-auto px-4 bg-black text-white`}
+        className={`${openSans.className} max-w-screen-md mx-auto px-4 bg-white text-black dark:bg-black dark:text-white`}
       >
         <Theme>
           <CustomCursor />

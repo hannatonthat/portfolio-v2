@@ -1,8 +1,15 @@
 "use client";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
+import { useContext } from "react";
+import { ThemeContext } from "./Theme";
+
 import Link from "next/link";
 
 export default function Navbar() {
+  const { darkMode, setDarkMode } = useContext(ThemeContext);
+  
   return (
     <nav className="backdrop-blur-sm">
       <div className="max-w-screen-md mx-auto py-8">
@@ -32,6 +39,15 @@ export default function Navbar() {
                 Projects
               </Link>
             </li>
+            <button
+              onClick={() => setDarkMode(!darkMode)}
+              aria-label="Toggle Dark Mode"
+            >
+              <FontAwesomeIcon
+                icon={darkMode ? faSun : faMoon}
+                className="text-lg cursor-pointer transition-transform duration-300 hover:scale-110"
+              />
+            </button>
           </div>
         </ul>
       </div>
