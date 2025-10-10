@@ -3,7 +3,7 @@
 import StaggeredLine from "@components/StaggeredLine";
 
 export default function About() {
-  let index = 3;
+  let index = 0;
 
   return (
     <div>

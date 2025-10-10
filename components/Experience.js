@@ -4,7 +4,7 @@ import ExperienceItem from "@components/ExperienceItem";
 import StaggeredLine from "@components/StaggeredLine";
 
 export default function Experience() {
-  let index = 7;
+  let index = 4;
 
   return (
     <main className="">
