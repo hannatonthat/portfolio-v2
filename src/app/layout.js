@@ -35,6 +35,7 @@ export default function RootLayout({ children }) {
       >
         <Theme>
           <CustomCursor />
+          <Navbar />
           <main>{children}</main>
           <Footer />
         </Theme>

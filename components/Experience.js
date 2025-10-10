@@ -16,7 +16,7 @@ export default function Experience() {
         <ExperienceItem 
           image="/assets/government.png"
           company="Government of Canada" 
-          title="Backend Developer & Data Engineer"
+          title="Backend Developer"
           date="May 2025 - Present"
           location="Ottawa, ON"
         />

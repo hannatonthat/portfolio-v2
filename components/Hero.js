@@ -24,7 +24,6 @@ export default function Hero() {
   return (
     <section className="relative h-screen flex flex-col justify-center items-center text-center">
       <div className="absolute top-0 left-0 w-full">
-        <Navbar />
       </div>
         <StaggeredLine index={index}>
           <h1 className="!mb-2">Hanna Ton That</h1>

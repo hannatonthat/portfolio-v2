@@ -12,13 +12,13 @@ export default function Navbar() {
               href="/"
               className="relative inline-block after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-current after:transition-all after:duration-300 hover:after:w-full"
             >
-              Hanna
+              Hanna Ton That
             </Link>
           </li>
           <div className="flex gap-6">
             <li>
               <Link
-                href="#about"
+                href="/"
                 className="relative inline-block after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-current after:transition-all after:duration-300 hover:after:w-full"
               >
                 About
@@ -26,15 +26,7 @@ export default function Navbar() {
             </li>
             <li>
               <Link
-                href="#experience"
-                className="relative inline-block after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-current after:transition-all after:duration-300 hover:after:w-full"
-              >
-                Experience
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="#projects"
+                href="/projects"
                 className="relative inline-block after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-current after:transition-all after:duration-300 hover:after:w-full"
               >
                 Projects
