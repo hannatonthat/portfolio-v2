@@ -46,7 +46,7 @@ const allProjects = [
   {
     title: "DiaDetect",
     github: "https://github.com/hannatonthat/DiaDetect",
-    summary: "A ML model designed to assist in the early detection of diabetes risk, optimized to a 92% accuracy using the Pima Indians dataset.",
+    summary: "A ML model built with RandomForestClassifier for the early detection of diabetes, tuned to an 80% accuracy using the Pima Indians dataset.",
     skills: ["Scikit-learn", "Python"]
   },
   {
