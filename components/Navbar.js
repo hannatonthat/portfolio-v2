@@ -23,22 +23,6 @@ export default function Navbar() {
             </Link>
           </li>
           <div className="flex gap-6">
-            <li>
-              <Link
-                href="/"
-                className="relative inline-block after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-current after:transition-all after:duration-300 hover:after:w-full"
-              >
-                About
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/projects"
-                className="relative inline-block after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-current after:transition-all after:duration-300 hover:after:w-full"
-              >
-                Projects
-              </Link>
-            </li>
             <button
               onClick={() => setDarkMode(!darkMode)}
               aria-label="Toggle Dark Mode"

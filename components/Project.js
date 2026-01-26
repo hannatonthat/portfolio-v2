@@ -2,7 +2,6 @@
 
 import { useState } from 'react';
 import ProjectItem from "@components/ProjectItem";
-import StaggeredLine from "@components/StaggeredLine";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 
@@ -78,15 +77,10 @@ export default function Project() {
     )
   );
 
-  let index = 0
-
   return (
     <main className="">
-      <StaggeredLine index={index}>
         <h2 className="">Projects</h2>
-      </StaggeredLine>
 
-      <StaggeredLine index={++index}>
         <div className="relative w-full">
           <button
             onClick={handleSearch}
@@ -111,29 +105,25 @@ export default function Project() {
             </button>
           )}
         </div>
-      </StaggeredLine>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-2">
         {filteredProjects.length > 0 ? (
-          filteredProjects.map((project, idx) => (
-            <StaggeredLine key={idx} index={index + idx}>
-              <ProjectItem
-                title={project.title}
-                github={project.github}
-                devpost={project.devpost}
-                summary={project.summary}
-                skills={project.skills}
-                onSkillClick={(skill) => {
-                  setTempQuery(skill);
-                  setQuery(skill);
-                }}
-              />
-            </StaggeredLine>
+          filteredProjects.map((project) => (
+            <ProjectItem
+              key={project.title}
+              title={project.title}
+              github={project.github}
+              devpost={project.devpost}
+              summary={project.summary}
+              skills={project.skills}
+              onSkillClick={(skill) => {
+                setTempQuery(skill);
+                setQuery(skill);
+              }}
+            />
           ))
         ) : (
-          <StaggeredLine index={index++}>
-            <p className="mt-8">No matching projects found.</p>
-          </StaggeredLine>
+          <p className="mt-8">No matching projects found.</p>
         )}
       </div>
     </main>

@@ -5,15 +5,15 @@ import { createContext, useEffect, useState } from "react";
 export const ThemeContext = createContext();
 
 export default function Theme({ children }) {
-  const [darkMode, setDarkMode] = useState(true);
+  const getInitialTheme = () => {
+    if (typeof window === "undefined") return true;
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme === "dark") return true;
+    if (savedTheme === "light") return false;
+    return window.matchMedia("(prefers-color-scheme: dark)").matches;
+  };
 
-  useEffect(() => {
-    // Check for saved theme preference or default to dark mode
-    const savedTheme = localStorage.getItem('theme');
-    const prefersDark = savedTheme === 'dark' || (savedTheme === null && window.matchMedia('(prefers-color-scheme: dark)').matches);
-    
-    setDarkMode(prefersDark);
-  }, []);
+  const [darkMode, setDarkMode] = useState(getInitialTheme);
 
   useEffect(() => {
     const root = document.documentElement;
