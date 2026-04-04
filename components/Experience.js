@@ -4,37 +4,38 @@ import ExperienceItem from "@components/ExperienceItem";
 
 export default function Experience() {
   return (
-    <main className="">
-      <h2 className="">Experience</h2>
+    <div className="flex flex-col">
+      <h2>Experience</h2>
 
-      <ul className="">
-        <ExperienceItem 
+      <ul className="m-0 list-none p-0 space-y-2">
+        <ExperienceItem
+          image="/assets/shopify.png"
+          company="Shopify"
+          companyLink="https://www.shopify.com/"
+          title="Software Engineer"
+        />
+
+        <ExperienceItem
           image="/assets/government.png"
           company="Government of Canada"
-          companyLink="https://www.canada.ca/en.html"
-          title="Software Developer @"
-          date="May 2025 - Dec 2025"
-          location="Ottawa, ON"
+          companyLink="https://www.canada.ca/"
+          title="Software Developer"
         />
 
-        <ExperienceItem 
+        <ExperienceItem
           image="/assets/chusj.png"
           company="CHU Sainte-Justine"
-          companyLink="https://www.chusj.org/en"
-          title="Software Developer @" 
-          date="May 2024 - Aug 2024"
-          location="Montreal, QC"
+          companyLink="https://www.chusj.org/"
+          title="Software Developer"
         />
 
-        <ExperienceItem 
+        <ExperienceItem
           image="/assets/dawson.png"
           company="Dawson College"
           companyLink="https://www.dawsoncollege.qc.ca/"
-          title="Software Developer @" 
-          date="Jan 2024 - May 2024"
-          location="Montreal, QC"
+          title="Software Developer"
         />
       </ul>
-    </main>
-  )
+    </div>
+  );
 }

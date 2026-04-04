@@ -7,53 +7,29 @@ import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 
 const allProjects = [
   {
+    title: "Resumaxx",
+    github: "https://github.com/hannatonthat/resumaxx",
+    summary: "Cursor for resumes. AI resume tailor with inline diff editing & smart suggestions.",
+    skills: ["React", "Next.js", "Typescript", "Supabase", "PostgreSQL", "Redis", "Stripe", "Docker", "Claude API"]
+  },
+  {
+    title: "Remap",
+    github: "https://github.com/hannatonthat/remap-uofthacks2026",
+    summary: "3D urban planner with multi-agent AI for real-time geospatial analysis & redesigns.",
+    skills: ["React", "Next.js", "Typescript", "FastAPI", "Python", "MongoDB", "LangChain", "LangGraph"]
+  },
+  {
     title: "Match-A-Wish",
-    github: "https://github.com/hannatonthat/MatchAWish-McHacks2025",
-    summary: "AI matching platform to connect donor surplus to children's hospitals in need. Designed in 24 hours, winning at McHacks 2025.",
-    skills: ["React", "Node.js", "OpenAI", "Auth0", "Databricks", "JavaScript"]
+    github: "https://github.com/hannatonthat/matchawish-mchacks2025",
+    summary: "AI matching platform to connect donor surplus to children's hospitals in need.",
+    skills: ["React", "Javascript", "Node.js", "Auth0", "Databricks", "OpenAI"]
   },
   {
     title: "RemberU",
-    github: "https://github.com/hannatonthat/RemberU-HTN2024",
-    summary: "A memory aid device with face recognition, lip reading, and conversation summarization. Designed in 36 hours at Hack The North 2024.",
-    skills: ["Flutter", "Dart", "Firebase", "Flask", "OpenCV", "YOLOv8", "PyTorch", "Python"]
+    github: "https://github.com/hannatonthat/remberu-htn2024",
+    summary: "AI memory aid with face recognition, lip reading & conversation summarization.",
+    skills: ["Flutter", "Dart", "Firebase", "Flask", "Python", "OpenCV", "YOLOv8", "PyTorch", "Gemini"]
   },
-  {
-    title: "PrepPal",
-    github: "https://github.com/hannatonthat/PrepPal",
-    summary: "AI mock interview platform that generates behavioral and technical interview questions with instant feedback and performance insights.",
-    skills: ["Next.js", "TypeScript", "FastAPI", "LangChain", "OpenAI", "PostgreSQL", "Prisma"]
-  },
-  {
-    title: "BullBot",
-    github: "https://github.com/hannatonthat/BullBot",
-    summary: "A ML trading bot using ensemble learning and time series forecasting with backtesting to identify bullish signals and beat the S&P 500.",
-    skills: ["Next.js", "React", "TypeScript", "FastAPI", "Scikit-learn", "XGBoost", "yfinance", "Python"]
-  },
-  {
-    title: "Minerva",
-    github: "https://github.com/hannatonthat/Minerva",
-    summary: "Playable ML chess engine trained on grandmaster games to evaluate board states and suggest optimal moves in real time.",
-    skills: ["Next.js", "React", "TypeScript", "chess.js", "FastAPI", "python-chess", "PyTorch", "Python"]
-  },
-  {
-    title: "CustomGPT",
-    github: "https://github.com/hannatonthat/CustomGPT",
-    summary: "Customizable LLM for efficient text generation, fine-tuned using the Tiny Shakespeare dataset to a training loss of 0.32.",
-    skills: ["PyTorch", "Python"]
-  },
-  {
-    title: "DiaDetect",
-    github: "https://github.com/hannatonthat/DiaDetect",
-    summary: "A ML model built with RandomForestClassifier for the early detection of diabetes, tuned to an 80% accuracy using the Pima Indians dataset.",
-    skills: ["Scikit-learn", "Python"]
-  },
-  {
-    title: "NeuroNet",
-    github: "https://github.com/hannatonthat/NeuroNet",
-    summary: "A neural network built from scratch with 0 dependencies, trained on the MNIST dataset with a 96% accuracy.",
-    skills: ["C++"]
-  }
 ];
 
 export default function Project() {
@@ -78,35 +54,37 @@ export default function Project() {
   );
 
   return (
-    <main className="">
-        <h2 className="">Projects</h2>
+    <div className="flex flex-col">
+      <h2>Projects</h2>
 
-        <div className="relative w-full">
+      <div className="relative w-full mb-4">
+        <button
+          type="button"
+          onClick={handleSearch}
+          className="absolute left-2 top-1/2 -translate-y-1/2 cursor-pointer text-zinc-400 transition-transform duration-300 hover:scale-110 hover:text-black dark:text-zinc-500 dark:hover:text-white"
+        >
+          <FontAwesomeIcon icon={faMagnifyingGlass} />
+        </button>
+        <input
+          type="text"
+          placeholder="Search by skill"
+          value={tempQuery}
+          onChange={e => setTempQuery(e.target.value)}
+          onKeyDown={handleKeyDown}
+          className="w-full rounded-md bg-zinc-200 p-1 pl-9 text-black focus:outline-2 focus:outline-zinc-400 dark:bg-zinc-800 dark:text-white dark:focus:outline-zinc-500"
+        />
+        {tempQuery && (
           <button
-            onClick={handleSearch}
-            className="cursor-pointer absolute left-2 top-1/2 transform -translate-y-1/2 text-zinc-400 dark:text-zinc-500 transition-transform duration-300 hover:scale-110 hover:text-black dark:hover:text-white"
+            type="button"
+            onClick={handleClear}
+            className="absolute right-2 top-1/2 -translate-y-1/2 cursor-pointer text-lg leading-none text-zinc-400 transition-transform duration-300 hover:scale-110 hover:text-black dark:text-zinc-500 dark:hover:text-white"
           >
-            <FontAwesomeIcon icon={faMagnifyingGlass} />
+            ×
           </button>
-          <input
-            type="text"
-            placeholder="Search by skill"
-            value={tempQuery}
-            onChange={e => setTempQuery(e.target.value)}
-            onKeyDown={handleKeyDown}
-            className="w-full pl-9 p-1 bg-zinc-200 dark:bg-zinc-800 rounded-md focus:outline-2 focus:outline-zinc-400 dark:focus:outline-zinc-500 text-black dark:text-white"
-          />
-          {tempQuery && (
-            <button
-              onClick={handleClear}
-              className="cursor-pointer absolute right-2 top-3.5 transform -translate-y-1/2 text-zinc-400 dark:text-zinc-500 transition-transform duration-300 hover:scale-110 hover:text-black dark:hover:text-white text-lg leading-none"
-            >
-              x
-            </button>
-          )}
-        </div>
+        )}
+      </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-2">
+      <div className="grid grid-cols-1 gap-x-4 gap-y-8 md:grid-cols-2">
         {filteredProjects.length > 0 ? (
           filteredProjects.map((project) => (
             <ProjectItem
@@ -123,9 +101,9 @@ export default function Project() {
             />
           ))
         ) : (
-          <p className="mt-8">No matching projects found.</p>
+          <p className="col-span-full">No matching projects found.</p>
         )}
       </div>
-    </main>
+    </div>
   );
 }

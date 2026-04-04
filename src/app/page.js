@@ -1,23 +1,18 @@
 'use client';
 
 import About from "@components/About";
-import Experience from '@components/Experience';
-import Project from "@components/Project";
+import Experience from "@components/Experience";
 
 export default function Home() {
   return (
-    <main>
-      <section id="about" className="">
+    <div className="space-y-8">
+      <section id="about">
         <About />
       </section>
 
-      <section id="experience" className="mt-8">
+      <section id="experience">
         <Experience />
       </section>
-
-      <section id="projects" className="mt-8">
-        <Project />
-      </section>
-    </main>
+    </div>
   );
 }

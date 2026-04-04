@@ -5,30 +5,28 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 export default function ProjectItem({ title, github, summary, skills = [], onSkillClick }) {
   return (
-    <div className="mt-6">
-      <div className="flex gap-2">
-        <a 
-          href={github} 
-          target="_blank" 
-          rel="noopener noreferrer" 
-          className="inline-block"
-        >
-          <FontAwesomeIcon
-            icon={faGithub}
-            className="text-xl transition-transform duration-300 hover:scale-110"
-          />
-        </a>
-        <h3 className="">{title}</h3>
+    <div className="flex flex-col gap-4">
+      <div className="space-y-2">
+        <div className="flex items-center gap-2">
+          <a
+            href={github}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block"
+          >
+            <FontAwesomeIcon
+              icon={faGithub}
+              className="text-xl transition-transform duration-300 hover:scale-110"
+            />
+          </a>
+          <h3>{title}</h3>
+        </div>
+
+        {summary && <p>{summary}</p>}
       </div>
 
-      {summary && (
-        <p className="mt-2">
-          {summary}
-        </p>
-      )}
-
       {skills.length > 0 && (
-        <div className="flex flex-wrap gap-2 mt-4">
+        <div className="flex flex-wrap gap-2">
           {skills.map((skill, idx) => (
             <span
               key={idx}
